@@ -1,5 +1,5 @@
 body {
-    text-align: center 
+    box-sizing: border-box;
 }
 h2, button {
     font-family: 'Courier New'; 
@@ -11,6 +11,4 @@ input, button {
     padding: 5px; 
 
 }
-#name, #email {
-    border: 2px solid coral; 
-}
+ 
