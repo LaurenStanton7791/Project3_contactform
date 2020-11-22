@@ -1,14 +1,106 @@
 body {
     box-sizing: border-box;
-}
-h2, button {
-    font-family: 'Courier New'; 
+    font-family: 'Bree Serif', serif;
+    margin: 0 auto; 
+    background-color: white;
+   
 }
 
-input, button {
-    width: 70%;
-    margin: 10px;
-    padding: 5px; 
+header {
+    background-color: rgb(40, 40, 59);
+    color: white;
+    padding: 25px 25px;
+    text-align: center; 
+    font-size: 2em; 
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.headline
+ {
+    text-align: center; 
+}
+
+.headline {
+    color: rgb(40, 40, 59);
+    font-family: 'Bree Serif', serif;
+    font-weight: bold; 
+    margin-bottom: 0;
+    
+}
+
+p {
+    padding-top: 0;
+    color: gray; 
+}
+
+fieldset {
+    width: 100%;
+    border: none;
 
 }
+
+hr {
+    border-color: black;
+}
+.line {
+    border: solid 2px black;
+}
+
+input,
+button {
+    padding: 15px; 
+}
+
+input[type="text"] {
+    width: 100%; 
+    padding: 12px;
+    background-color: rgb(236, 235, 235);
+    border: none;
+    margin-top: 6px; 
+    margin-bottom: 16px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #000000; 
+  }
+
+input[type="submit"] {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    background-color: #53bab4;
+    color: white;
+    border: none;
+    width: 85%;
+    font-size: 1.5em;
+    margin: 7%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: skyblue;  
+   }
+
+
+label > input[type="radio"]:checked  {
+    color: black;
+   }
+textarea {
+     width: 100%;
+     padding: 7px 10px;
+     background-color: rgb(236, 235, 235);
+     margin-top: 3%;
+     border-radius: 4px;
+     border: none;
+} 
  
+::placeholder {
+    text-align: right;
+    font-style: italic;
+}
+
+.copyright {
+    font-style: italic;
+    color: gray; 
+    text-align: center;
+}
