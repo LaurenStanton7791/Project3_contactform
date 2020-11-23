@@ -1,8 +1,8 @@
 body {
     box-sizing: border-box;
     font-family: 'Bree Serif', serif;
-    margin: 0 auto; 
     background-color: white;
+   
    
 }
 
@@ -19,19 +19,20 @@ header {
 .headline
  {
     text-align: center; 
-}
-
-.headline {
     color: rgb(40, 40, 59);
     font-family: 'Bree Serif', serif;
     font-weight: bold; 
     margin-bottom: 0;
     
 }
-
+h2 {
+    color: black;
+}
+legend,
 p {
     padding-top: 0;
     color: gray; 
+    font-size: 16px; 
 }
 
 fieldset {
@@ -64,6 +65,10 @@ input[type="text"] {
 input[type="text"]:focus {
     border: 2px solid #000000; 
   }
+
+input[type="radio"] {
+    color: gray;
+}
 
 input[type="submit"] {
     text-align: center;
@@ -103,4 +108,14 @@ textarea {
     font-style: italic;
     color: gray; 
     text-align: center;
+}
+
+/*Media Queries*/
+
+@media (min-width:769px) {
+
+    body { margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    }
 }
