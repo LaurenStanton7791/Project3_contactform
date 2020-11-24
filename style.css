@@ -1,13 +1,13 @@
 body {
     box-sizing: border-box;
     font-family: 'Bree Serif', serif;
+    color: gray;
     background-color: white;
-   
-   
+    margin: 0 auto; 
 }
 
 header {
-    background-color: rgb(40, 40, 59);
+    background-color: rgb(54, 54, 61);
     color: white;
     padding: 25px 25px;
     text-align: center; 
@@ -16,22 +16,24 @@ header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.headline
- {
+.headline {
     text-align: center; 
-    color: rgb(40, 40, 59);
-    font-family: 'Bree Serif', serif;
-    font-weight: bold; 
-    margin-bottom: 0;
-    
+    color: rgb(54, 54, 61);
+    font-family: 'Bree Serif', serif; 
+    margin-bottom: 15px;
 }
+
 h2 {
-    color: black;
+    color: rgb(54, 54, 61);
 }
+
+form {
+    justify-content: center;
+}
+
 legend,
 p {
     padding-top: 0;
-    color: gray; 
     font-size: 16px; 
 }
 
@@ -43,9 +45,12 @@ fieldset {
 
 hr {
     border-color: black;
+
 }
+
 .line {
     border: solid 2px black;
+    margin: auto; 
 }
 
 input,
@@ -53,22 +58,20 @@ button {
     padding: 15px; 
 }
 
-input[type="text"] {
+input[type="text"],
+select {
     width: 100%; 
     padding: 12px;
     background-color: rgb(236, 235, 235);
     border: none;
     margin-top: 6px; 
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
+
 
 input[type="text"]:focus {
     border: 2px solid #000000; 
   }
-
-input[type="radio"] {
-    color: gray;
-}
 
 input[type="submit"] {
     text-align: center;
@@ -76,23 +79,19 @@ input[type="submit"] {
     background-color: #53bab4;
     color: white;
     border: none;
-    width: 85%;
+    width: 100%;
     font-size: 1.5em;
-    margin: 7%;
+    margin: auto; 
+    margin-bottom: 14px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
     background-color: skyblue;  
-   }
+}
 
-
-label > input[type="radio"]:checked  {
-    color: black;
-   }
 textarea {
      width: 100%;
-     padding: 7px 10px;
      background-color: rgb(236, 235, 235);
      margin-top: 3%;
      border-radius: 4px;
@@ -104,18 +103,33 @@ textarea {
     font-style: italic;
 }
 
+select {
+    width: 100%;
+    font: 17px 'Bree Serif', serif;
+    color: gray;
+}
+
+#zip {
+    width: max-content;
+}
 .copyright {
     font-style: italic;
-    color: gray; 
     text-align: center;
 }
 
 /*Media Queries*/
 
-@media (min-width:769px) {
+@media only screen and (min-width: 768px) {
 
-    body { margin-left: auto;
+form { 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
     margin-right: auto;
     max-width: 960px;
     }
 }
+
