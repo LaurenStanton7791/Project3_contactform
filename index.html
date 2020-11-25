@@ -9,9 +9,12 @@
         <title>The Code Review</title>
  </head>
  <body>
+
         <header>The Code Review</header>
-<form>
-<fieldset>
+
+        <form>
+        <fieldset>
+
         <div class="headline">
         <h2>Signup for our Newsletter</h2>
         <legend>Get the latest news on how your code is doing right in your inbox</legend>
@@ -32,7 +35,8 @@
         <label for="city">City</label><br>
         <input type="text" id="city" name="user_city"><br>
         <label for="state">State</label><br>
-        <select id="state" name="Choose State" ><br>
+        <div class="wrap-select-arrow">
+        <select id="state" name="state" ><br>
                 <optgroup label="Choose State">
                         <option value="" selected disabled hidden>Choose State</option>
                         <option value="AL">Alabama</option>
@@ -88,6 +92,11 @@
                         <option value="WY">Wyoming</option>
                 </optgroup>
                </select><br>
+               <div class="select-arrow">
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+              </div>
+            </div>
         <label for="zip">Zip Code</label><br>
         <input type="text" id="zip" name="user_zip"><br>
 </fieldset>
@@ -117,6 +126,8 @@
         <input type="submit" class="submit" value="Sign Up">
 
 </form>
+<footer>
         <p class="copyright">Copyright The Code Review</p>
+</footer>
  </body>
 </html>
