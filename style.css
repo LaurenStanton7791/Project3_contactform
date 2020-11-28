@@ -146,12 +146,11 @@ textarea {
 select {
     font-family:'Bree Serif', serif;
     color: gray;
-    
 }
 
+
 #zip {
-    width: 45%;
-   
+    width: 55%
 }
 
 /* Footer */
@@ -168,7 +167,6 @@ select {
 /*Media Queries*/
 
 @media(min-width: 768px) {
-
 form,
 .line,
 .second { 
@@ -177,6 +175,12 @@ form,
     width: 65%;
   
 }
+.topsection {
+
+    width:100%;
+    display:block;
+  
+  }
 
 .column {
     width:100%;
@@ -189,7 +193,6 @@ form,
     height: 50px;
     padding: 10px;
     width: 75%;
-    float: right;
     background-color: white;
     border: none;
     margin-top: 6px; 
@@ -200,16 +203,16 @@ form,
 
 
 .questionaire {
-  width:30%;
-  padding-top: 10px;
-  font-size: 1.2em;
+    width:30%;
+    padding-top: 10px;
+    font-size: 1.2em;
 }
 
 
 
 .info {
-   padding-top: 15px;
-   color: white;
+    padding-top: 15px;
+    color: white;
 }
 
 
@@ -218,5 +221,10 @@ input[type="submit"] {
     width: 100%;
 }
 
+#zip {
+    width: 35%;
+    margin-right: 37%;
+  
+}
 
 }
